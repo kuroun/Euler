@@ -10,4 +10,4 @@ def prime? val
     end 
     return true 
 end
-puts prime? 18
+#puts prime? 18
