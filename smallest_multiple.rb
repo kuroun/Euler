@@ -63,8 +63,8 @@ def smallest_multiple_recursive a, b
   end
 end
 Benchmark.bm(10) do |x|
-  x.report('prime algorithm'){smallest_multiple_prime(1, 200)}
-  x.report('recursive algorithm'){smallest_multiple_recursive(1, 200)}
+  x.report('prime algorithm'){smallest_multiple_prime(1, 10)}
+  x.report('recursive algorithm'){smallest_multiple_recursive(1, 10)}
 end
-puts smallest_multiple_prime 1,20
-puts smallest_multiple_recursive 1,20
+puts smallest_multiple_prime 1,10
+puts smallest_multiple_recursive 1,10
